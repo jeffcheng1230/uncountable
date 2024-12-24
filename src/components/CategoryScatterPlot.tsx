@@ -116,7 +116,6 @@ function CategoryScatterPlot({theme, data, inputCategories, outputCategories, fi
       const svg = d3
         .select("#" + graph)
         .attr("width", svgWidth)
-        .attr("height", svgHeight)
         .style("background", "white")
         .style("border-radius", "8px")
         .style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.1)");
@@ -195,7 +194,8 @@ function CategoryScatterPlot({theme, data, inputCategories, outputCategories, fi
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        width: "100%"
       }}>
       <Grid2 sx={{ marginBottom: "10px" }}>
         <Paper elevation={3}>
