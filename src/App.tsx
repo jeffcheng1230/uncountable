@@ -159,7 +159,7 @@ const App: React.FC = () => {
                   TabIndicatorProps={{ style: { backgroundColor: "white" } }}
                   style={{ marginBottom: "5px", borderBottom: "1px solid white" }}>
               {Array.from({ length: 3 }).map((_, index) => (
-                <Tab key={index} style={{ color: "white" }} label={["Outputs (1)", "Outputs (2)", "Inputs"][index]} />
+                <Tab key={index} style={{ color: "white" }} label={["Inputs (1)", "Inputs (2)", "Outputs"][index]} />
               ))}
             </Tabs>
             {
